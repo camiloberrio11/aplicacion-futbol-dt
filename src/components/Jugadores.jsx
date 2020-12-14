@@ -1,5 +1,7 @@
 import React, { createRef, useEffect } from 'react';
 import { connect } from 'react-redux';
+import { AGREGAR_SUPLENTE } from '../redux/types';
+import { agregarTitular, agregarSuplente } from '../redux/actions';
 
 const Jugadores = ({ jugadores, agregarTitular, agregarSuplente }) => {
   const gridJugadores = createRef();
@@ -68,21 +70,10 @@ const mapStateToProps = (state) => ({
   jugadores: state.jugadores,
 });
 
-const mapDispathToProps = (dispatch) => ({
-  agregarTitular(jugador) {
-    dispatch({
-      type: 'AGREGAR_TITULAR',
-      payload: jugador,
-    });
-  },
-
-  agregarSuplente(jugador) {
-    dispatch({
-      type: 'AGREGAR_SUPLENTE',
-      payload: jugador,
-    });
-  },
-});
+const mapDispathToProps = {
+  agregarTitular,
+  agregarSuplente,
+};
 
 export default connect(mapStateToProps, mapDispathToProps)(Jugadores);
 // Recibe primer parametro: mapStateToProps

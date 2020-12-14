@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import cancha from '../cancha.svg';
+import { quitarTitular } from '../redux/actions';
 
 const Titulares = ({ titulares, quitarTitular }) => {
   return (
@@ -26,12 +27,7 @@ const mapStateToProps = (state) => ({
   titulares: state.titulares,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  quitarTitular(jugador) {
-    dispatch({
-      type: 'QUITAR_TITULAR',
-      payload: jugador,
-    });
-  },
-});
+const mapDispatchToProps = {
+  quitarTitular
+}
 export default connect(mapStateToProps, mapDispatchToProps)(Titulares);

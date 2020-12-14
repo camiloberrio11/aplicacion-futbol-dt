@@ -1,25 +1,25 @@
 const jugadores = [
   {
     id: 1,
-    nombre: 'Leonel Messi',
+    nombre: 'Sergio Ramos',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },
   {
     id: 2,
-    nombre: 'Genaro Gattuso',
+    nombre: 'Dani Carvajal',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },
   {
     id: 3,
-    nombre: 'Franco Armani',
+    nombre: 'Gianluigi Buffon',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },
   {
     id: 4,
-    nombre: 'Casemiro',
+    nombre: 'Ronaldo',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },
@@ -55,7 +55,7 @@ const jugadores = [
   },
   {
     id: 10,
-    nombre: 'Leonel Vangioni',
+    nombre: 'Ronaldinho',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },
@@ -73,7 +73,7 @@ const jugadores = [
   },
   {
     id: 13,
-    nombre: 'James Rodriguez',
+    nombre: 'Arturo Vidal',
     foto:
       'https://res.cloudinary.com/dupegtamn/image/upload/v1607917942/aplicacion_jugadores/pp_mzjzqk.jpg',
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { quitarSuplente } from '../redux/actions';
 
 const Suplentes = ({ suplentes, quitarSuplente }) => {
   return (
@@ -24,12 +25,7 @@ const mapStateToProps = (state) => ({
   suplentes: state.suplentes,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  quitarSuplente(jugador) {
-    dispatch({
-      type: 'QUITAR_SUPLENTE',
-      payload: jugador,
-    });
-  },
-});
+const mapDispatchToProps = {
+  quitarSuplente,
+};
 export default connect(mapStateToProps, mapDispatchToProps)(Suplentes);
